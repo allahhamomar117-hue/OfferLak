@@ -17,9 +17,9 @@ const MainLayout = () => {
   const isArabic = lang === "ar";
 
   return (
-    <div className={`flex ${isArabic ? "flex-row-reverse" : "flex-row"} min-h-screen`}>
-      
-
+    <div
+      className={`flex ${isArabic ? "flex-row-reverse" : "flex-row"} min-h-screen`}
+    >
       {/* المحتوى */}
       <div className="flex flex-col flex-1 bg-gray-100">
         <Navbar />

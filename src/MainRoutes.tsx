@@ -11,7 +11,7 @@ import { PrivacyPage } from './pages/Privacy/PrivacyPage';
 const MainRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/ar" replace />} />
+      <Route path="/" element={<Navigate to="/en" replace />} />
 
       <Route path="/:lang" element={<MainLayout />}>
 
