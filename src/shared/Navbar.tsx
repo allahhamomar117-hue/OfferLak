@@ -17,14 +17,13 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
 
           <div className="flex items-center gap-6">
-            {/* اللوغو بستايل بسيط ومميز مع الإشارة المئوية البرتقالية */}
-            <Link to={`/${lang}`} className="flex items-center gap-1.5 select-none group">
-              <div className="w-7 h-7 rounded-full bg-orange-500 flex items-center justify-center text-white text-sm font-black shadow-sm group-hover:scale-105 transition-transform">
-                %
-              </div>
-              <span className="text-xl font-black tracking-tight text-gray-900 dark:text-white">
-                ffer<span className="text-orange-500">Lak</span>
-              </span>
+            {/* اللوغو الجديد مستدعى مباشرة من مجلد public */}
+            <Link to={`/${lang}`} className="flex items-center select-none group">
+              <img 
+                src="/OfferLakTextOrng.svg" 
+                alt="OfferLak Logo" 
+                className="h-8 w-auto group-hover:scale-105 transition-transform duration-150 object-contain"
+              />
             </Link>
 
             {/* روابط التنقل */}
